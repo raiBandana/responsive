@@ -39,97 +39,86 @@
 <body>	
 	
 	<!-- /////////////////////////////////////////Navigation -->
-	<nav class="navbar navbar-inverse navbar-fixed-top" >
-	    <div class="container-fluid">
-	    
-	    	
-	    	
+	<div class="page-wrapper">
 	        <!-- Nav -->
-	        
-	        <div class="navbar-header">
-	        	<div class="container">
-			        	<div class="row">
-			        		
-			        		
-			           		 <div class="col-md-3 ">
-			           		 	<div class="searchbar pull-right">
-						    		<form action="search.php" method="GET">
-						    			<label class="search_label">
-						    				<input type="text" name="search" placeholder="I'm searching for.." autocomplete="off">
-						    			</label>
-						    			<button type="submit" class="btn btn-secondar">
-						    				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-						    			</button>
-						    		</form>
-
-
-			    				</div>
-
-			           		 </div>
-			            </div>
-	        	</div>
-	        </div>	
-	        	<hr>
-	           <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+	  
+	        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        		<div class="container-fluid">	
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>    
+            				<a class="navbar-brand" href="#">
+			                    <img src="images/rigo.png" alt="">
+			                </a>
+			            <div class="navbar-header">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			                    <span class="sr-only">Toggle navigation</span>
+			                    <span class="icon-bar"></span>
+			                    <span class="icon-bar"></span>
+			                    <span class="icon-bar"></span>
+			                    <span class="icon-bar"></span>
+			                  	<span class="icon-bar"></span>    
 
-            </button>
-                <a class="navbar-brand" href="#">
-                    <img src="images/l.jpeg" alt="">
-                </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+			            </button>
+			                
+			            </div>
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+		            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		                <ul class="nav navbar-nav" style="margin-left: 30px;">
 
-                  <li><a class="link-3" href="#">About</a></li>
-                  <li><a class="link-3" href="#">Business</a></li>
-                  <li><a class="link-3" href="#">Contact</a></li>
-                  <li><a class="link-3" href="#">Politics</a></li>
-                  <li><a class="link-3" href="#">Contact</a></li>
+		                  <li><a class="link-3" href="#">About</a></li>
+		                  <li><a class="link-3" href="#">Business</a></li>
+		                  <li><a class="link-3" href="#">Contact</a></li>
+		                  <li><a class="link-3" href="#">Politics</a></li>
+		                  <li><a class="link-3" href="#">Contact</a></li>
 
-                </ul>
-            </div>
+		                </ul>
+
+		                <!-- search bar start -->
+
+		                	<div class="search-bar">
+			           		 		<div class="searchbar pull-right">
+							    		<form action="search.php" method="GET">
+							    			<label class="search_label">
+							    				<input type="text" name="search" placeholder="I'm searching for.." autocomplete="off">
+							    			</label>
+							    			<button type="submit" class="btn btn-secondar">
+							    				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+							    			</button>
+							    		</form>
+							    	</div>
+			    				</div>
+			    				<!-- search bar end -->
+		            </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-    </nav>
-	
-	<!-- Navigation -->
+			           		 
+			           
+   	</nav>
+	<!-- Navigation end-->
 	
 	<!-- /////////////////////////////////////////Content -->
 	<div id="page-content">
-		<div class="container-fluid">
-			<article id="main-content">
-				<div class="row" style="
-    margin-top: 30px;">
-				<div class="col-md-6 col-sm-3 col-xm-4">
-						<div class="img img-responsive firstimage">
-							<div class="post-caption">
-								<div class="label">
-									<span class="label label-warning">news</span>
+		<div class="container-fluid" style="margin-top: 50px;">
+			
+				<div class="row" >
+						<div class="col-xs-12 col-md-6 ">
+							<div class="img img-responsive firstimage">
+								<div class="post-caption">
+									<div class="label">
+										<span class="label label-warning">news</span>
 
+									</div>
 								</div>
+							<div class="first-image-heading">
+								<div class="top-left-text">
+									<a href="" class="top-left" > Hillary Clinton in Rise for next America President</a>
 							</div>
-						<div class="first-image-heading">
-							<div class="top-left-text">
-								<a href="" class="top-left" > Hillary Clinton in Rise for next America President</a>
-						</div>
-						
-						</div>
-					 </div>		
-				</div>
+							
+								</div>
+					 	</div>		
+					</div>
 					<div class="col-md-6">
-						<div class="col-md-6 col-sm-3">
+						<div class="col-md-6 col-xm-6">
 							<div class="topright-image1">
 								<div class="top-right-heading">
 									<a href="" class="top-right"> Astrouts and Discovery</a>
@@ -143,7 +132,7 @@
 								</div>
 							</div>
 						</div>
-							<div class="col-md-6 col-sm-3">
+							<div class="col-md-6 col-xm-6">
 								<div class="topright-image3">
 									<div class="top-right-heading">
 										<a href="" class="top-right" > healthly habits</a>
@@ -159,7 +148,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				
+			
 				<!-- end of first row -->
 
 				<!-- next second row -->
@@ -168,25 +158,15 @@
                     <hr>
                   </div>
 
-                  <!-- second  menu -->
-
-
-					
-				
-
-				
-
-	   			 </div>
-	         <!-- end of second menu -->
-
+       
 	         <!-- start second row  -->
 				
 					<div class="container-fluid">
 						<div class="row">
 							<!-- start of first column of second row -->
-							<div class="col-md-8 col-sm-4">
+							<div class="col-md-8 col-xm-6">
 								<!-- column inside col-md-8 -->
-								<div class="col-md-6 col-sm-3">
+								<div class="col-md-6 col-xm-6">
 									<div class="left-side">
 								<div class="left1-image">
 								<div class="post-caption">
@@ -259,7 +239,7 @@
 
 									<!-- start of second column -->
 									<!-- start of first row of last column -->
-					<div class="col-md-6">
+					<div class="col-md-6 col-xm-6">
 
 						<div class="center-side">
 							<div class="center1-image">
@@ -328,15 +308,15 @@
 						</div>
 						
 						<div class="range offset-top-0">
-							<div class="col-md-4">
+							<div class="col-md-4 col-xm-6">
 								<div class="featured-image1">
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 col-xm-6">
 								<div class="featured-image2">
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 col-xm-6">
 								<div class="featured-image3">
 								</div>
 							</div>
@@ -346,7 +326,7 @@
 				 <!-- end of second coloum -->
 
                  			    <!-- start of right side bar search bar -->
-					<div class="col-md-4">
+					<div class="col-md-4 col-xm-6">
 						<div class="side-bar">
 							
 								<h3 class="display-6">
@@ -360,9 +340,9 @@
 											<input type="text" class="form-control" id="search" placeholder="I'm looking for ..."></input>
 											<div class="btn-group">
 											<a href="#" type="button" class="btn btn-primary">search</a>
-										</div>
+											</div>
 										
-									</div>
+										</div>
 									</form>
 
 
@@ -372,7 +352,7 @@
 					</div>
 
 
-					<div class="col-md-4">
+					<div class="col-md-4 col-xm-6">
 						<div class="second-sidebar">
 							
 							<h3 class="display">
@@ -482,8 +462,8 @@
 											
 										</div>
 									</div>
-									<div class-"last-row">
-									<div class="col-md-4">
+									
+									<div class="col-md-4 col-xm-6 ">
 										<div class="text-section">
 											<h5 style="font-family:lato;">Happy National Chocolate Cake Day!</h5>
 											<p>
@@ -497,7 +477,7 @@
 										</div>
 									</div>
 
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -561,21 +541,22 @@
 			
 		</article>
 			
-	</div>
-	</div>
+	
 
 	<!-- /////////////////////////////////////////Footer -->
-	<footer>
-		<div class="wrap-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">Copyright &copy; Your Website - <a href="http://www.365bootstrap.com" target="_blank">Bootstrap Themes</a> Designed by 365Bootstrap.com</div>
-				</div>
-			</div>
+						<footer>
+							<div class="wrap-footer">
+								<div class="container">
+									<div class="row">
+										<div class="col-lg-12 col-xm-6">Copyright &copy; Your Website - <a href="http://www.365bootstrap.com" target="_blank">Bootstrap Themes</a> Designed by 365Bootstrap.com</div>
+									</div>
+								</div>
+							</div>
+						</footer>
 		</div>
-	</footer>
-	<!-- Footer -->
-	
+	</div>	<!-- Footer -->
+	</div> 
+	<!-- page wrapper end -->
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery.min.js"></script>
