@@ -1,6 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+	 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	 <link rel="stylesheet" type="text/css" href="theme.css">
+	<link rel="stylesheet" type="text/css" href="print.css" media="print">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,17 +11,20 @@
 	
 	<title>web.com</title>
 
-	<!-- time -->
+
 	
-    </head>
+   
+	 <!-- FONT CSS -->
 	
 	
-	 <!-- Bootstrap Core CSS -->
+	 <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
 	 <link href='https://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
 	 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
 	 <link href='https://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+ <!-- Bootstrap Core CSS -->
+   
     <link rel="stylesheet" href="fonts/glyphicons-halflings-regular.ttf">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -28,108 +33,245 @@
 	<link href="css/style.css" rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
 
+	<style>
+	.dropdown-menu {
+	min-width: 200px;
+}
+p{
+	padding-left: 15px;
+    margin-bottom: 0px;
+    color:#428bca;
+}
+.mycontent-left {
+  border-right: 1px dashed #333;
+}
 
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-        <script src="js/respond.min.js"></script>
-    <![endif]-->
+.dropdown-menu.columns-2 {
+	min-width: 400px;
+}
+.dropdown-menu.columns-3 {
+	min-width: 900px;
+}
+/*.navbar-nav {
+    width: 100%;
+    text-align: center;
+
+}*/
+
+.dropdown-menu li a {
+	padding-top: 5px ;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	font-weight: 300;
+}
+
+.multi-column-dropdown {
+	list-style: none;
+	padding-left: 0px;
+}
+
+.multi-column-dropdown li a {
+	display: block;
+	clear: both;
+	line-height: 1.428571429;
+	color: #333;
+	white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+	text-decoration: none;
+	color: #262626;
+	background-color: #f5f5f5;
+}
+/*.v-divider{
+ margin-left:5px;
+ margin-right:5px;
+ width:1px;
+ height:100%;
+ border-left:1px solid gray;
+}
+*/
+@media (max-width: 767px) {
+	.dropdown-menu.multi-column {
+		min-width: 240px !important;
+		overflow-x: hidden;
+	}
+}
+	</style>
 </head>
-<body>	
-	
-	<!-- /////////////////////////////////////////Navigation -->
-	<nav class="navbar navbar-inverse navbar-fixed-top" >
-	    <div class="container-fluid">
-	    
-	    	
-	    	
-	        <!-- Nav -->
-	        
-	        <div class="navbar-header">
-	        	<div class="container">
-			        	<div class="row">
-			        		
-			        		
-			           		 <div class="col-md-3 ">
-			           		 	<div class="searchbar pull-right">
-						    		<form action="search.php" method="GET">
-						    			<label class="search_label">
-						    				<input type="text" name="search" placeholder="I'm searching for.." autocomplete="off">
-						    			</label>
-						    			<button type="submit" class="btn btn-secondar">
-						    				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-						    			</button>
-						    		</form>
+<body>
+	<div class="wrapper">
+	<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	    <span class="sr-only">Toggle navigation</span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+        </button>
+       <!--  <a class="navbar-brand" href="#">Brand</a> -->
+    </div>
+    <!--/.navbar-header-->
+ 
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+	        <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About us <b class="caret"></b></a>
+	            <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">One more separated link</a></li>
+	            </ul>
+	        </li>
+	        <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Company services <b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-3">
+			            	
 
-
-			    				</div>
-
-			           		 </div>
+				            <ul class="multi-column-dropdown">
+				            	<li><p>  Stay Safety Online</p></li>
+				            	
+					            <li><a href="#">Stay safe online</a></li>
+					            <li><a href="#">scan for malwares</a></li>
+					            <li><a href="#">stay protected</a></li>
+					            <!-- <li class="divider"></li> -->
+					            <li><a href="#">span and phising</a></li>
+					            <!-- <li class="divider"></li> -->
+					            <li><a href="#">VPN scanning</a></li>
+				            
+   
+				            </ul>
+				       
 			            </div>
-	        	</div>
-	        </div>	
-	        	<hr>
-	           <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>    
 
-            </button>
-                <a class="navbar-brand" href="#">
-                    <img src="images/l.jpeg" alt="">
-                </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+			            <div class="col-sm-3">
+			            	
+				            <ul class="multi-column-dropdown">
+				            	<li><p>Protect your information</p></li>
+					            <li><a href="#">Password security</a></li>
+					            <li><a href="#">social network</a></li>
+					            <li><a href="#">wifi security</a></li>
+					            <!-- <li class="divider"></li> -->
+					            <li><a href="#">online shopping</a></li>
+					            <!-- <li class="divider"></li> -->
+					            <li><a href="#">backup it</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-3">
+			            	
+				            <ul class="multi-column-dropdown">
+				            	<li><p>For parental control</p></li>
+					            <li><a href="#">Parent control</a></li>
+					            <li><a href="#">cyberbully </a></li>
+					            <li><a href="#">wifi security</a></li>
+					            <!-- <li class="divider"></li> -->
+					            <li><a href="#">online shopping</a></li>
+					            <!-- <li class="divider"></li> -->
+					            <li><a href="#">backup it</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-3">
+			            	
+				            <ul class="multi-column-dropdown">
+				            	<li><p>Mobile & on-the-go</p></li>
+					            <li><a href="#">Parent control</a></li>
+					            <li><a href="#">cyberbully </a></li>
+					            <li><a href="#">wifi security</a></li>
+					            <!-- <li class="divider"></li> -->
+					            <li><a href="#">online shopping</a></li>
+					            <!-- <li class="divider"></li> -->
+					            <li><a href="#">backup it</a></li>
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>
+	        <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technic Online safety<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					            <li><a href="#">Action</a></li>
+					            <li><a href="#">Another action</a></li>
+					            <li><a href="#">Something else here</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#">Separated link</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#">One more separated link</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					            <li><a href="#">Action</a></li>
+					            <li><a href="#">Another action</a></li>
+					            <li><a href="#">Something else here</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#">Separated link</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#">One more separated link</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					            <li><a href="#">Action</a></li>
+					            <li><a href="#">Another action</a></li>
+					            <li><a href="#">Something else here</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#">Separated link</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#">One more separated link</a></li>
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>
+	        <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Business <b class="caret"></b></a>
+	            <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">One more separated link</a></li>
+	            </ul>
+	        </li>
+        </ul>
+    </div>
+    <!--/.navbar-collapse-->
+</nav>
 
-                  <li><a class="link-3" href="#">About</a></li>
-                  <li><a class="link-3" href="#">Business</a></li>
-                  <li><a class="link-3" href="#">Contact</a></li>
-                  <li><a class="link-3" href="#">Politics</a></li>
-                  <li><a class="link-3" href="#">Contact</a></li>
+<!--/.navbar-->
 
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-	
-	<!-- Navigation -->
-	
-	<!-- /////////////////////////////////////////Content -->
-	<div id="page-content">
-		<div class="container-fluid">
-			<article id="main-content">
-				<div class="row" style="
-    margin-top: 30px;">
-				<div class="col-md-6 col-sm-3 col-xm-4">
-						<div class="img img-responsive firstimage">
-							<div class="post-caption">
-								<div class="label">
-									<span class="label label-warning">news</span>
+<div id="page-content">
+		<div class="container-fluid" style="margin-top: 50px;">
+			
+				<div class="row" >
+						<div class="col-xs-12 col-md-6 ">
+							<div class="img img-responsive firstimage">
+								<div class="post-caption">
+									<div class="label">
+										<span class="label label-warning">news</span>
 
+									</div>
 								</div>
+							<div class="first-image-heading">
+								<div class="top-left-text">
+									<a href="" class="top-left" > Hillary Clinton in Rise for next America President</a>
+								</div>
+							
 							</div>
-						<div class="first-image-heading">
-							<div class="top-left-text">
-								<a href="" class="top-left" > Hillary Clinton in Rise for next America President</a>
-						</div>
-						
-						</div>
-					 </div>		
-				</div>
+					 	</div>		
+					</div>
 					<div class="col-md-6">
-						<div class="col-md-6 col-sm-3">
+						<div class="col-md-6 col-xm-6">
 							<div class="topright-image1">
 								<div class="top-right-heading">
 									<a href="" class="top-right"> Astrouts and Discovery</a>
@@ -143,7 +285,7 @@
 								</div>
 							</div>
 						</div>
-							<div class="col-md-6 col-sm-3">
+							<div class="col-md-6 col-xm-6">
 								<div class="topright-image3">
 									<div class="top-right-heading">
 										<a href="" class="top-right" > healthly habits</a>
@@ -159,7 +301,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				
+			
 				<!-- end of first row -->
 
 				<!-- next second row -->
@@ -168,39 +311,31 @@
                     <hr>
                   </div>
 
-                  <!-- second  menu -->
-
-
-					
-				
-
-				
-
-	   			 </div>
-	         <!-- end of second menu -->
-
+       
 	         <!-- start second row  -->
 				
 					<div class="container-fluid">
 						<div class="row">
 							<!-- start of first column of second row -->
-							<div class="col-md-8 col-sm-4">
+							<div class="col-md-8 col-xm-6">
 								<!-- column inside col-md-8 -->
-								<div class="col-md-6 col-sm-3">
+								<div class="col-md-6 col-xm-6">
 									<div class="left-side">
 								<div class="left1-image">
 								<div class="post-caption">
 									<div class="label">
-										<span class="label label-warning">Cyber security</span>
+										<span class="label label-warning">Travelling</span>
 									</div>
 								</div>
+
 					
 						
-					
+							<div class="row-text">
 								<div class="h4">
 								<a href="#">Travelling to Paris and milano </a>
 								
 								</div>
+							</div>
 								
 							</div>
 						</div>
@@ -214,10 +349,11 @@
 							<div class="post-varient-1">
 								<div class="left-side">
 									<img src="images/jo.jpg">
+
 									<a href="#" class="thirdrow-link" >
 										Celebrity in Red carpet and their luxurious dress for best  dress</a>
 
-										<p class="light">Terrorist have been increasein since 911.. and this is the more detail news abotu the attack</p>
+										<p class="light">Jenifer lopez the hit and the ever young singer actor and  mother, lati america</p>
 								</div>
 								<hr>
 							</div>
@@ -226,7 +362,7 @@
 							<!-- start of row 3 -->
 						
 								<div class="post-varient-1">
-									<div class="left-side">
+									
 									<div class="left2-image">
 										<div class="post-caption">
 											<div class="post-caption">
@@ -236,15 +372,16 @@
 												
 											</div>
 										</div>
-							
-								
-							
+									
+								</div>
+								<div class="text">
 										<div class="h4 text-normal " >
 										<a href="#">Election and who is the next President</a>
 										</div>
 										
 									</div>
-								</div>
+
+								
 							</div>
 
 							<!-- end of the last row of first column -->
@@ -259,7 +396,7 @@
 
 									<!-- start of second column -->
 									<!-- start of first row of last column -->
-					<div class="col-md-6">
+					<div class="col-md-6 col-xm-6">
 
 						<div class="center-side">
 							<div class="center1-image">
@@ -268,7 +405,7 @@
 											<span class="label label-warning">Sports</span>
 										</div>
 									</div>
-										<div class="h4 text-normal font-accent-2">
+										<div class="row-text">
 											<a href="#">Michela Jordan the legend of basketball</a>
 										</div>
 						
@@ -303,22 +440,26 @@
 							</div>
 						
 							<div class="post-varient-1">
-								<div class="left-side">
+									
 									<div class="center2-image">
 										<div class="post-caption">
-											<div class="label">
+											<div class="post-caption">
+												<div class="label">
 													<span class="label label-warning">Sports</span>
+												</div>
+												
 											</div>
 										</div>
-							
-								
-							
-										<div class="h4 text-normal font-accent-2" >
-										<a href="#">Michela Jordan the legend</a>
+									
+								</div>
+								<div class="text">
+										<div class="h4 text-normal " >
+										<a href="#">Michelle Jordan in the NBA</a>
 										</div>
 										
 									</div>
-								</div>
+
+								
 							</div>
 
 							<!-- end of the row of second column -->
@@ -327,26 +468,12 @@
 
 						</div>
 						
-						<div class="range offset-top-0">
-							<div class="col-md-4">
-								<div class="featured-image1">
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="featured-image2">
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="featured-image3">
-								</div>
-							</div>
-						</div>
-
+						
 				
 				 <!-- end of second coloum -->
 
                  			    <!-- start of right side bar search bar -->
-					<div class="col-md-4">
+					<div class="col-md-4 col-xm-6">
 						<div class="side-bar">
 							
 								<h3 class="display-6">
@@ -360,9 +487,9 @@
 											<input type="text" class="form-control" id="search" placeholder="I'm looking for ..."></input>
 											<div class="btn-group">
 											<a href="#" type="button" class="btn btn-primary">search</a>
-										</div>
+											</div>
 										
-									</div>
+										</div>
 									</form>
 
 
@@ -372,7 +499,7 @@
 					</div>
 
 
-					<div class="col-md-4">
+					<div class="col-md-4 col-xm-6">
 						<div class="second-sidebar">
 							
 							<h3 class="display">
@@ -435,9 +562,11 @@
 							
 								
 							
-										<div class="h4 text-normal font-accent-2" style="font-family:'Roboto', sans-serif;">
+										
+											<div class="row1-text">
 										<a href="#" class="rightbar">Election and who is the next President</a>
-										</div>
+									</div>
+										
 										
 									</div>
 									<div class="left3-image">
@@ -449,7 +578,9 @@
 											
 										
 														<div class="h4 text-normal font-accent-2" style="font-family:'Roboto', sans-serif;">
-														<a href="#" class="rightbar">lets travel my fren </a>
+															<div class="row1-text">
+														<a href="#" class="rightbar">Happy go lucky there are 10 things of happu life </a>
+													</div>
 														</div>
 														
 													</div>
@@ -462,15 +593,21 @@
 								
 							</div>
 
+							
+
 							<!-- start of very last row -->
 							<div class="heading-divider">
-								<h2> <em>World Today</em></h2> 
+
+	
+							<h2> <em>World Today</em></h2> 
 								<hr>
 							</div>
-							<section>
+							
 							<div class="last-row">
 							<div class="container">
 								<div class="row">
+
+											
 									<div class="col-md-4">
 										<div class="image-last">
 											<div class="post-caption">
@@ -482,8 +619,8 @@
 											
 										</div>
 									</div>
-									<div class-"last-row">
-									<div class="col-md-4">
+									
+									<div class="col-md-4 col-xm-6 ">
 										<div class="text-section">
 											<h5 style="font-family:lato;">Happy National Chocolate Cake Day!</h5>
 											<p>
@@ -497,7 +634,7 @@
 										</div>
 									</div>
 
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -555,34 +692,39 @@
 									
 								</div>
 							</div>
+							
 						</div>
-					</section>
+
+					
 					
 			
 		</article>
 			
-	</div>
-	</div>
+	
 
 	<!-- /////////////////////////////////////////Footer -->
-	<footer>
-		<div class="wrap-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">Copyright &copy; Your Website - <a href="http://www.365bootstrap.com" target="_blank">Bootstrap Themes</a> Designed by 365Bootstrap.com</div>
-				</div>
-			</div>
+						<footer>
+							<div class="wrap-footer">
+								<div class="container">
+									<div class="row">
+										<div class="col-lg-12 col-xm-6">Copyright &copy; Your Website - <a href="http://www.365bootstrap.com" target="_blank">Bootstrap Themes</a> Designed by 365Bootstrap.com</div>
+									</div>
+								</div>
+							</div>
+						</footer>
 		</div>
-	</footer>
-	<!-- Footer -->
+	</div>	<!-- Footer -->
 	
+	<!-- page wrapper end -->
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery.min.js"></script>
 	<!-- Core JavaScript Files -->
     <script src="js/bootstrap.min.js"></script>
 
-	
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
 </body>
 </html>
-	
