@@ -36,6 +36,15 @@ overflow: hidden;
 
 }
 
+#nav-container{
+  position:relative;
+  z-index:50;
+}
+#content{
+  position:relative;
+  z-index:30;
+}
+
 
 .first-image-heading{
     position: absolute;
@@ -501,11 +510,16 @@ h4, .h4 {
   .dropdown-menu {
   min-width: 200px;
 }
+
+.header .header-nav  ul.dropdown-menu,
+ {
+    z-index: 10000;
+}
 p {
-  padding-left: 15px;
+    padding-left: 15px;
     margin-bottom: 0px;
     color:#428bca;
-    font-size: 10px;
+    font-size: 15px;
 }
 .mycontent-left {
   border-right: 1px dashed #333;
